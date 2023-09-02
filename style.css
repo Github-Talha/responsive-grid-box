@@ -1,0 +1,22 @@
+.box {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px 200px 50px 50px;
+  gap: 20px;
+}
+#box-1 {
+  grid-row: span 5;
+}
+#box-11,
+#box-12 {
+  grid-column: span 3;
+}
